@@ -1,0 +1,243 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100vh;
+    background-color:  hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container {
+    height: 60vh;
+    width: 55vw;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card {
+    height: 60vh;
+    width: 18.33vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+.one {
+    border-radius: 0.5rem 0 0 0.5rem;
+    background-color:  hsl(31, 77%, 52%);
+}
+
+.two {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.three {
+    border-radius: 0 0.5rem 0.5rem 0;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.content {
+    height: auto;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.img_div {
+    height: 6.5vh;
+    width: 5vw;
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.oneimg {
+    background-image: url("images/icon-sedans.svg");
+
+}
+
+.twoimg {
+    background-image: url("images/icon-suvs.svg");
+
+}
+
+.threeimg {
+    background-image: url("images/icon-luxury.svg");
+
+}
+
+h1 {
+    font-family: "Big Shoulders",sans-serif;
+    font-weight: 700;
+    color:  hsl(0, 0%, 95%);
+    margin-top: 2rem;
+}
+
+p {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-top: 2rem;
+}
+
+button {
+    height: 6vh;
+    width: 8vw;
+    border-radius: 50px;
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin-top: 3rem;
+    background-color:  hsl(0, 0%, 95%);
+}
+
+.sedans {
+    color: hsl(31, 77%, 52%);
+  
+}
+
+.suvs {
+    color: hsl(184, 100%, 22%);
+
+}
+
+.luxury {
+    color: hsl(179, 100%, 13%);
+
+}
+
+button:active {
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 62rem) {
+
+    .main_container {
+        width: 75vw;
+        height: 60vh;
+    }
+
+    .card {
+        width: 25vw;
+        height: 60vh;
+    }
+
+    .content {
+        width: 17vw;
+    }
+
+    .img_div {
+        width: 6vw;
+    }
+
+    button {
+        width: 11vw;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 48rem) {
+
+    body {
+        height: auto;
+        min-height: 100vh;
+        padding: 2rem 0;
+    }
+
+    .main_container {
+        width: 85vw;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 85vw;
+        height: 35vh;
+    }
+
+    .one {
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .three {
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .content {
+        width: 65vw;
+    }
+
+    .img_div {
+        width: 18vw;
+        height: 7vh;
+    }
+
+    h1 {
+        margin-top: 1.2rem;
+    }
+
+    p {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+    }
+
+    button {
+        width: 30vw;
+        height: 6vh;
+        margin-top: 1.5rem;
+    }
+}
+
+
+/* Small Mobile */
+@media (max-width: 30rem) {
+
+    .main_container {
+        width: 90vw;
+    }
+
+    .card {
+        width: 90vw;
+        height: 38vh;
+    }
+
+    .content {
+        width: 70vw;
+    }
+
+    .img_div {
+        width: 18vw;
+        height: 6vh;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+        line-height: 1.3rem;
+    }
+
+    button {
+        width: 32vw;
+        height: 6vh;
+    }
+}
